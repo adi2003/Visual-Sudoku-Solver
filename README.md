@@ -51,14 +51,19 @@ Copy code
 http://127.0.0.1:5000/
 
 Application Structure
+
 app.py: The main Flask application file.
+
 templates/index.html: The main HTML file for the web interface.
+
 static/bgimage.jpg: The background image for the web page.
 
 Workflow
+
 Uploading an Image:
 
 Users can upload an image of a Sudoku puzzle through the web interface.
+
 Image Processing:
 
 The uploaded image is processed to detect and extract the Sudoku grid using OpenCV.The grid is transformed to a bird's-eye view perspective for better accuracy in digit recognition.
@@ -77,6 +82,7 @@ The solved digits are overlaid onto the original image.
 The final image, showing the solved Sudoku puzzle, is displayed to the user.
 
 Example Usage
+
 1. Upload an Image:
 
  -- Click on the "Choose File" button and select an image of a Sudoku puzzle from your computer.
@@ -88,10 +94,11 @@ Example Usage
  -- You can download the solved image.
 
 Troubleshooting
-Ensure all required packages are installed.
-Verify the pre-trained MNIST model path is correct.
-Ensure Tesseract OCR is installed and configured correctly if you choose to use it.
-Check the Flask server logs for any errors.
+
+-- Ensure all required packages are installed.
+-- Verify the pre-trained MNIST model path is correct.
+-- Ensure Tesseract OCR is installed and configured correctly if you choose to use it.
+-- Check the Flask server logs for any errors.
 
 Future Improvements
 1. Improve digit recognition accuracy.
