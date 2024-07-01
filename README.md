@@ -50,39 +50,30 @@ sh
 Copy code
 http://127.0.0.1:5000/
 
-Application Structure:
+Application Structure:<br>
+-- app.py: The main Flask application file.<br>
+-- templates/index.html: The main HTML file for the web interface.<br>
+-- static/bgimage.jpg: The background image for the web page.
 
-app.py: The main Flask application file.
+Workflow:
 
-templates/index.html: The main HTML file for the web interface.
-
-static/bgimage.jpg: The background image for the web page.
-
-Workflow
-
-Uploading an Image:
-
+Uploading an Image:<br>
 Users can upload an image of a Sudoku puzzle through the web interface.
 
-Image Processing:
-
+Image Processing:<br>
 The uploaded image is processed to detect and extract the Sudoku grid using OpenCV.The grid is transformed to a bird's-eye view perspective for better accuracy in digit recognition.
 
-Digit Recognition:
-
+Digit Recognition:<br>
 Each cell in the Sudoku grid is preprocessed and fed into pytesseract pre-trained model to recognize the digits. If a digit is returned by the pytesseract api then we keep it else we allot it to 0 and assume that it was empty. The recognized digit is added to the grid.
 
-Solving the Sudoku:
-
+Solving the Sudoku:<br>
 The recognized Sudoku grid is solved using a backtracking algorithm.
 
-Overlaying the Solution:
+Overlaying the Solution:<br>
+-- The solved digits are overlaid onto the original image.<br>
+-- The final image, showing the solved Sudoku puzzle, is displayed to the user.
 
-The solved digits are overlaid onto the original image.
-The final image, showing the solved Sudoku puzzle, is displayed to the user.
-
-Example Usage
-
+Example Usage:<br>
 1. Upload an Image:<br>
  -- Click on the "Choose File" button and select an image of a Sudoku puzzle from your computer.<br>
  -- Click on "Upload and Solve".<br>
