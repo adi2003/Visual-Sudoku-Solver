@@ -83,25 +83,22 @@ The final image, showing the solved Sudoku puzzle, is displayed to the user.
 
 Example Usage
 
-1. Upload an Image:
-
- -- Click on the "Choose File" button and select an image of a Sudoku puzzle from your computer.
- -- Click on "Upload and Solve".
+1. Upload an Image:<br>
+ -- Click on the "Choose File" button and select an image of a Sudoku puzzle from your computer.<br>
+ -- Click on "Upload and Solve".<br>
  
-2. View Solved Puzzle:
-
- -- The solved puzzle will be displayed with the solution overlaid on the original image.
+2. View Solved Puzzle:<br>
+ -- The solved puzzle will be displayed with the solution overlaid on the original image.<br>
  -- You can download the solved image.
 
-Troubleshooting: 
-
--- Ensure all required packages are installed.
--- Verify the pre-trained MNIST model path is correct.
--- Ensure Tesseract OCR is installed and configured correctly if you choose to use it.
+Troubleshooting: <br>
+-- Ensure all required packages are installed.<br>
+-- Verify the pre-trained MNIST model path is correct.<br>
+-- Ensure Tesseract OCR is installed and configured correctly if you choose to use it.<br>
 -- Check the Flask server logs for any errors.
 
-Future Improvements: 
-1. Improve digit recognition accuracy.
-2. Add more robust error handling and user feedback.
+Future Improvements: <br>
+1. Improve digit recognition accuracy.<br>
+2. Add more robust error handling and user feedback.<br>
 3. Extend the application to handle more complex puzzles and features.
    
