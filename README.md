@@ -1,6 +1,6 @@
 # Visual-Sudoku-Solver
 A service that solves a sudoku configuration using the image of the sudoku grid.
-This project is a Visual Sudoku Solver that allows users to upload an image of a Sudoku puzzle, recognizes the digits on the grid, solves the puzzle, and displays the solution over the original image. The project is implemented using Flask for the web interface, OpenCV for image processing, and a pre-trained MNIST model for digit recognition.
+This project is a Visual Sudoku Solver that allows users to upload an image of a Sudoku puzzle, recognizes the digits on the grid, solves the puzzle, and displays the solution over the original image. The project is implemented using Flask for the web interface, OpenCV for image processing, and a pytesseract for digit recognition.
 
 Features
 1. Upload an image of a Sudoku puzzle.
@@ -18,6 +18,7 @@ Prerequisites
 
 Setup Instructions
 Clone the repository:
+
 sh
 Copy code
 git clone https://github.com/adi2003/visual-sudoku-solver.git
@@ -48,22 +49,24 @@ Open your web browser and go to:
 sh
 Copy code
 http://127.0.0.1:5000/
+
 Application Structure
 app.py: The main Flask application file.
 templates/index.html: The main HTML file for the web interface.
 static/bgimage.jpg: The background image for the web page.
+
 Workflow
 Uploading an Image:
 
 Users can upload an image of a Sudoku puzzle through the web interface.
 Image Processing:
 
-The uploaded image is processed to detect and extract the Sudoku grid using OpenCV.
-The grid is transformed to a bird's-eye view perspective for better accuracy in digit recognition.
+The uploaded image is processed to detect and extract the Sudoku grid using OpenCV.The grid is transformed to a bird's-eye view perspective for better accuracy in digit recognition.
+
 Digit Recognition:
 
-Each cell in the Sudoku grid is preprocessed and fed into the pre-trained MNIST model to recognize the digits.
-If the model's confidence is high enough, the recognized digit is added to the grid.
+Each cell in the Sudoku grid is preprocessed and fed into pytesseract pre-trained model to recognize the digits. If a digit is returned by the pytesseract api then we keep it else we allot it to 0 and assume that it was empty. The recognized digit is added to the grid.
+
 Solving the Sudoku:
 
 The recognized Sudoku grid is solved using a backtracking algorithm.
