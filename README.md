@@ -50,7 +50,7 @@ sh
 Copy code
 http://127.0.0.1:5000/
 
-Application Structure
+Application Structure:
 
 app.py: The main Flask application file.
 
@@ -93,17 +93,14 @@ Example Usage
  -- The solved puzzle will be displayed with the solution overlaid on the original image.
  -- You can download the solved image.
 
-Troubleshooting
+Troubleshooting: 
 
 -- Ensure all required packages are installed.
-
 -- Verify the pre-trained MNIST model path is correct.
-
 -- Ensure Tesseract OCR is installed and configured correctly if you choose to use it.
-
 -- Check the Flask server logs for any errors.
 
-Future Improvements
+Future Improvements: 
 1. Improve digit recognition accuracy.
 2. Add more robust error handling and user feedback.
 3. Extend the application to handle more complex puzzles and features.
