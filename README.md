@@ -16,38 +16,18 @@ Prerequisites
 5. TensorFlow/Keras
 6. Tesseract OCR
 
-Setup Instructions
-Clone the repository:
-
-sh
-Copy code
+Setup Instructions:
+Clone the repository:<br>
+Copy code:<br>
 git clone https://github.com/adi2003/visual-sudoku-solver.git
 cd visual-sudoku-solver
-Create and activate a virtual environment:
 
-sh
-Copy code
-python -m venv venv
-source venv/bin/activate   # On Windows, use `venv\Scripts\activate`
-Install the required packages:
-
-sh
-Copy code
-pip install -r requirements.txt
-
-Place the background image in the static folder:
-
-Create a static directory in your project root if it doesn't exist.
-Move your background image (bgimage.jpg) into the static directory.
-Run the Flask application:
-
-sh
-Copy code
+Run the Flask application:<br>
+Copy code:<br>
 python app.py
-Open your web browser and go to:
 
-sh
-Copy code
+Open your web browser and go to:<br>
+Copy code:<br>
 http://127.0.0.1:5000/
 
 Application Structure:<br>
