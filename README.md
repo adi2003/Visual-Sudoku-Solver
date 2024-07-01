@@ -96,8 +96,11 @@ Example Usage
 Troubleshooting
 
 -- Ensure all required packages are installed.
+
 -- Verify the pre-trained MNIST model path is correct.
+
 -- Ensure Tesseract OCR is installed and configured correctly if you choose to use it.
+
 -- Check the Flask server logs for any errors.
 
 Future Improvements
